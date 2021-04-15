@@ -8,9 +8,21 @@
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Corben&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Events</title>
     <link rel="stylesheet" href="css/estyle.css">
 </head>
+    <style>
+        .eitems{
+            border-left: 3px solid white;
+        }
+        .oitems{
+            border-right: 3px solid white;
+            margin-right: 15px !important;
+        }
+        .eventpic{
+            margin-right: 15px;
+        }
+    </style>
 
 <body>
     <video loop muted autoplay id="bck">
@@ -62,13 +74,35 @@
                 <img src="logo.png" class="oeventpic" alt="">
             </div>
         </div>
-        <div class="eitems">
+        <div class="eitems" style="margin-bottom: 60px;">
             <img src="logo.png" class="eventpic" alt="">
             <div class="descrip">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur tempora consequatur similique corrupti adipisci, iure accusantium sunt deleniti cupiditate quidem totam, incidunt iusto esse veniam dignissimos. Quasi aut asperiores sapiente.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi inventore ab reiciendis velit consequuntur, odit aliquid unde ea veniam, at voluptates modi adipisci distinctio porro commodi praesentium dolore voluptatem? Sapiente.</p></div>
             </div>
         </div>
     </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top" ><img src="top-arrow.png" width="40px" height="40px" alt=""></button>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
 </body>
 
 </html>
