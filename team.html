@@ -5,39 +5,156 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Team</title>
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Corben&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
   <link rel="stylesheet" href="css/tstyle.css">
   <style>
+    body{
+      margin: 0;
+      padding: 0;
+      font-family: 'Josefin Sans', sans-serif !important;
+    }
     .profile-img {
       height: 100px !important;
       width: 100px !important;
     }
-
+.profile-img:hover{
+  height: 165px !important;
+  width: 165px !important;
+  /* transform: scale(1.4,1.4); */
+  margin-top: 15px;
+  margin-bottom: -100px;
+  filter: brightness(120%) !important;
+  margin-left: -30px;
+  transition: 0.4s;
+}
     .profiles {
       width: 1100px !important;
       height: 250px !important;
     }
+    header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  /* position: absolute;
+  top:0%;
+  left: 0%; */
+  width:100%;
+  margin: 0;
+  padding: 0;
+  height:100px;
+  font-size: 15px;
+  color: white;
+}
+/* navbar */
+nav{
+  color: #FFF;
+  margin:30px 90px;
+}
+nav ul{
+  list-style: none;
+}
+nav ul li {
+  /* float: left; */
+  display: inline-block;
+  transition: .3s;
+}
+nav ul li a{
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #EFEEF5;
+  transition: .5;
+  font-size: 17px;
+  margin-left:16px;
+}
+nav ul:hover li a{
+  opacity: .3;
+  filter: blur(1px);
+}
+nav ul li:hover a{
+  text-decoration: none;
+  opacity: 1;
+  filter: blur(0);
+  /* color: #591BC5;; */
+}
+nav ul li:hover{
+  /* height: 45px; */
+  transform: scale(1.4,1.4);
+  /* padding-top: 30px;
+  margin-top: -10px; */
+ /* background: #EFEEF5; */
+  text-decoration: none;
+  transition: 0.3s;
+  /* transform: skew(15deg); */
+}
+/* Logo */
+/* .logo{
+  width: 35px;
+  height: 35px;
+  background: #EFEEF5;
+  margin: 40px 63px;
+  float: left;
+  transform: rotate(-30deg);
+}
+.logo span{
+  color: #591BC5;
+  font-size: 2em;
+  line-height: 1.4;
+  padding-left: 5px;
+  font-weight: bold;
+} */
+.nlogo{
+    width: 50px;
+    height: 50px;
+  }
+  .lft{
+    margin-left: 30px;
+    margin-right: 80px;
+  }
+  .lft p{
+    margin: 15px 0 15px 10px;
+    /* margin-left: 10px; */
+    float: right;
+  }
   </style>
 </head>
-
-<body>
-  
+<body style="font-family:'Josefin Sans', sans-serif;">
+  <header>
+    <!-- navbar -->
+    <div class="lft">
+        <img src="nittlogo.png" alt="logo" class="nlogo">
+        <p>National Institute of Technology<br> Tiruchirappalli</p>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="event.html">Events</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <!-- logo -->
+    <!-- <div class="logo"><span>N</span></div> -->
+  </header>
   <div class="container">
     <h1 class="heading">Standing Team</h1>
     <br><br>
     <div class="profiles">
       <div class="profile">
         <img src="members/2023/Akriti.jpeg" height="100px" width="100px" class="profile-img">
-
+        <div class="hde">
         <!-- <h3 class="user-name">Khushboo Khanchandani</h3> -->
         <h5>Akriti <br> Upadhyay</h5>
         <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum eveniet soluta hic sunt sit reprehenderit.</p> -->
         <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
         <a href="#"><img src="members/Instagram.webp" width="32px" height="32px" alt=""></a>
         &nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="#"><img src="members/LinkedIN.webp" width="23px" height="23px" alt=""></a>
+        <a href="#"><img src="members/LinkedIN.webp" width="23px" height="23px" alt=""></a></div>
       </div>
       <div class="profile">
         <img src="members/2023/Amandeep.jpeg" class="profile-img">
