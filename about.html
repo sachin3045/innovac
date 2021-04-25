@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innovac</title>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/astyle.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Corben&display=swap" rel="stylesheet">
+    
+    <style>
+        h1{
+            text-decoration: underline;
+        }
+        #orient{
+            margin-top: 30%;
+        }
+        .odd{
+            float: left;
+        }
+        .even{
+            float: right;
+        }
+        .odd :hover{
+            color: white !important;
+        }
+        .even :hover{
+            color: white !important;
+        }
+        .video{
+            opacity: 0.3;
+        }
+    </style>
+</head>
+<script>
+    var video=document.getElementById('bck');
+    video.play();
+</script>
+<body>
+    <!-- Background & animion & navbar & title -->
+    <div class="container-fluid">
+        <video class="video" loop muted autoplay id="bck">
+            <source src="test.mp4" type="video/mp4">
+            hello
+        </video>
+        <!-- Background animtion-->
+        <!-- <div class="background">
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+        </div> -->
+        <!-- header -->
+        <header>
+            <!-- navbar -->
+            <div class="lft">
+                <img src="nittlogo.png" alt="logo" class="nlogo">
+                <p>National Institute of Technology<br> Tiruchirappalli</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="event.html">Events</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+            <!-- logo -->
+            <!-- <div class="logo"><span>N</span></div> -->
+        </header>
+        <!-- title & content -->
+        <div>
+            <section class="header-content">
+                <h1>PCC</h1>
+                <p> The PCC stands for <b>Parallel Computing Club</b>. The technical club involves spreading awareness of Parallel Computing using latest hardware like NVIDIA GPUs and popular processors along with software like Matlab, C, C++ etc. The work involves providing innovative solutions to various problems by developing them in our technical labs.</p>
+            </section>
+        </div>
+        <div>
+            <section id="orient" class="header-content">
+                <h1>Innovac'20</h1>
+                <p>Innovac was first conducted in 2020, <br>It included the following Events:- <br></p>
+                <button class="odd" >Codophilia</button><br><br><br>
+                <button class="even" >Partisans</button><br><br><br>
+                <button class="odd" >Encodrill</button><br><br><br>
+                <button class="even" >Enquizzire</button><br><br><br>
+                <button class="odd" >Sequalite</button><br><br><br>
+                <button class="even" >Tech Charades</button>
+            </section>
+        </div>
+        </div>
+</body>
+
+</html>
