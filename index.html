@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Innovac</title>
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Corben&display=swap" rel="stylesheet">
@@ -24,7 +25,7 @@
 <body>
     <!-- Background & animion & navbar & title -->
     <video loop muted autoplay id="bck">
-        <source src="gf103.mp4" type="video/mp4">
+        <source src="gf10.webm" type="video/webm">
         hello
     </video>
     <!-- Background animtion-->
@@ -36,7 +37,7 @@
             <div class="cube"></div>
         </div> -->
     <!-- header -->
-    <header>
+    <header class="animated fadeIn">
         <!-- navbar -->
         <div class="lft">
             <img src="nittlogo.png" alt="logo" class="nlogo">
@@ -55,9 +56,9 @@
         <!-- <div class="logo"><span>N</span></div> -->
     </header>
     <!-- title & content -->
-    <div class="middle">
-        <section class="header-content">
-            <h1>INNOVAC'21</h1>
+    <div class="middle animated fadeIn">
+        <section class="header-content" style="animation-delay: .3s;">
+            <h1>INNOVAC '21</h1>
             <p> An event conducted by <b>Parallel Computing Club</b>,<br>
                 including various sub-events like codophilia and more.</p>
             <div class="btns">
@@ -85,11 +86,11 @@
                     <h2 id="seconds">00</h2>
                     <p>seconds</p>
                 </div>
+                <!-- <img src="https://github.com/bradtraversy/vanillawebprojects/blob/master/new-year-countdown/img/spinner.gif?raw=true"
+        alt="Loading..." id="loading" class="loading" /> -->
             </div>
         </div>
     </div>
-    <img src="https://github.com/bradtraversy/vanillawebprojects/blob/master/new-year-countdown/img/spinner.gif?raw=true"
-        alt="Loading..." id="loading" class="loading" />
     <script>
         const days = document.getElementById("days");
         const hours = document.getElementById("hours");
@@ -100,7 +101,7 @@
         const loading = document.getElementById("loading");
 
         const nextYear = new Date().getFullYear() + 1;
-        const newYearTime = new Date(`May 10 2021 00:00:00`);
+        const newYearTime = new Date(`January 01 ${nextYear} 00:00:00`);
 
         function updateCountdown() {
             const currentTime = new Date();

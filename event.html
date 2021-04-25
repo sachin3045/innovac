@@ -6,18 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Corben&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Events</title>
     <link rel="stylesheet" href="css/estyle.css">
 </head>
 <style>
-    .eitems {
+    /* .eitems {
         border-left: 3px solid white;
-    }
+    } */
 
     .oitems {
-        border-right: 3px solid white;
+        /* border-right: 3px solid white; */
         margin-right: 15px !important;
     }
 
@@ -27,170 +29,72 @@
 </style>
 
 <body>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
     <video loop muted autoplay id="bck">
-        <source src="gf103.mp4" type="video/mp4">
+        <source src="gf10.webm" type="video/webm">
         hello
     </video>
     <header>
         <!-- navbar -->
-        <div class="lft">
+        <div class="lft animated fadeInLeft faster">
             <img src="nittlogo.png" alt="logo" class="nlogo">
             <p>National Institute of Technology<br> Tiruchirappalli</p>
         </div>
-        <nav>
+        <nav class="animated fadeInRight faster">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="#">Events</a></li>
+                <li style="transform: scale(1.4,1.4);"><a href="event.html">Events</a></li>
                 <li><a href="team.html">Team</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
         <!-- logo -->
         <!-- <div class="logo"><span>N</span></div> -->
     </header>
-    <div class="heading">
+    <!-- <div class="heading">
         <h1 class="eventhead">EVENTS</h1>
-    </div>
+    </div> -->
     <div class="event">
-        <div class="eitems">
-            <div class="profile-e">
-                <!-- <img src="logo.png" class="eventpic" alt=""> -->
-                <div class="content">
-                    <div class="header">
-                        <img src="logo.png" alt="Jeams Middlman">
-                        <div class="infos">
-                            <h3 class="name">Event Name</h3>
-                            <!-- <p class="title">Web Developer / We Desinger</p> -->
-                        </div>
-                    </div>
-                    <div class="body">
-                        <h3 style="color: black;">Rules:</h3>
-                        <p>1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et accusamus odio itaque, qui explicabo laboriosam mi.</p>
-                        <p>2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et accusamus odio itaque, qui explicabo laboriosam mi.</p>
-                        <p>3. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et accusamus odio itaque, qui explicabo laboriosam mi.</p>
-                        <p>4. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et accusamus odio itaque, qui explicabo laboriosam mi.</p>
-                    </div>
-                </div>
-            </div>
+        <div class="eitems animated fadeIn">
+                <img src="events/logos/mind.png" class="eventpic" alt="" style="filter: brightness(110%);">
             <div class="descrip">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi nobis sed nemo nesciunt itaque? Neque
-                    provident accusamus, voluptates laboriosam, fugit natus non libero totam sint incidunt, voluptatum
-                    facilis necessitatibus officia?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
-                    inventore ab reiciendis velit consequuntur, odit aliquid unde ea veniam, at voluptates modi adipisci
-                    distinctio porro commodi praesentium dolore voluptatem? Sapiente.</p>
+                <h1><a href="events/ctf.html" style="text-decoration: none;">Mind Matrix</a></h1>
+               <p>It is a special kind of cybersecurity competition designed to challenge its participants to solve computer security problems and/or capture and defend computer systems.</p>
             </div>
         </div>
-        <div class="oitems">
-            <div class="descrip">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae ut labore quibusdam consequatur
-                    cupiditate rem ducimus adipisci illo nulla accusamus tempora qui cum, laudantium perferendis cumque
-                    ad dolores amet? Autem.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi inventore ab
-                    reiciendis velit consequuntur, odit aliquid unde ea veniam, at voluptates modi adipisci distinctio
-                    porro commodi praesentium dolore voluptatem? Sapiente.</p>
+        <div class="oitems" data-aos="fade-up-left" data-aos-duration="500">
+            <div class="descrip" style="margin-right: 100px;">
+                <h1 style="margin-left: -110px;"><a href="events/mothra.html" style="text-decoration: none;">Mothra</a></h1>
+                <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo quisquam unde quam perferendis fugiat consequuntur tempore facere aliquam suscipit dignissimos?</p> -->
+                <p>An event that will test your technical as well as reasoning skills. So get ready to participate and compete with your friends to reach at the top and become the real mothra.</p>
             </div>
-            <div class="profile">
-                <img src="logo.png" class="oeventpic" alt="">
-                <div class="content">
-                    <div class="header">
-                        <img src="logo.png" alt="Jeams Middlman">
-                        <div class="infos">
-                            <h3 class="name">Event Name</h3>
-                            <!-- <p class="title">Web Developer / We Desinger</p> -->
-                        </div>
-                    </div>
-                    <div class="body">
-                        <h3 style="color: black;">Rules:</h3>
-                        <p>1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et accusamus odio itaque, qui explicabo laboriosam mi.</p>
-                        <p>2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et accusamus odio itaque, qui explicabo laboriosam mi.</p>
-                        <p>3. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et accusamus odio itaque, qui explicabo laboriosam mi.</p>
-                        <p>4. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et accusamus odio itaque, qui explicabo laboriosam mi.</p>
-                    </div>
-                </div>
-            </div>
+            <img src="events/logos/mothra1.png" class="oeventpic" alt="">
         </div>
-    <div class="eitems">
-        <div class="profile-e">
-            <!-- <img src="logo.png" class="eventpic" alt=""> -->
-            <div class="content">
-                <div class="header">
-                    <img src="logo.png" alt="Jeams Middlman">
-                    <div class="infos">
-                        <h3 class="name">Event Name</h3>
-                        <!-- <p class="title">Web Developer / We Desinger</p> -->
-                    </div>
-                </div>
-                <div class="body">
-                    <h3 style="color: black;">Rules:</h3>
-                    <p>1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et accusamus odio itaque, qui explicabo laboriosam mi.</p>
-                    <p>2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et accusamus odio itaque, qui explicabo laboriosam mi.</p>
-                    <p>3. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et accusamus odio itaque, qui explicabo laboriosam mi.</p>
-                    <p>4. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et accusamus odio itaque, qui explicabo laboriosam mi.</p>
-                </div>
-            </div>
-        </div>
+    <div class="eitems" data-aos="fade-up-right">
+            <img src="events/logos/marathon.jpg" class="eventpic" alt="">
         <div class="descrip">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore assumenda odit quaerat voluptatum eaque
-                consectetur maxime eum deserunt, consequatur, vitae adipisci facere sed ratione sunt? Non nostrum quidem
-                blanditiis accusamus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi inventore ab
-                reiciendis velit consequuntur, odit aliquid unde ea veniam, at voluptates modi adipisci distinctio porro
-                commodi praesentium dolore voluptatem? Sapiente.</p>
+            <h1><a href="events/marathon.html" style="text-decoration: none;">Marathon</a></h1>
+            <p>An event specially designed to test your speed in problem solving. Get engaged in solving problems with a timer ticking on your head and test yourself.</p>
+            <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo quisquam unde quam perferendis fugiat consequuntur tempore facere aliquam suscipit dignissimos?</p> -->
         </div>
     </div>
-    <div class="oitems">
-        <div class="descrip">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque architecto quos aliquid, cupiditate
-                velit dolores. Cumque maxime culpa aliquam vero repudiandae aspernatur optio quo similique hic nihil,
-                facere debitis corrupti!Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi inventore ab
-                reiciendis velit consequuntur, odit aliquid unde ea veniam, at voluptates modi adipisci distinctio porro
-                commodi praesentium dolore voluptatem? Sapiente.</p>
+    <div class="oitems" data-aos="fade-up-left">
+        <div class="descrip" style="margin-right: 110px;">
+            <h1><a href="events/reverse.html" style="text-decoration: none;">Reverse Engineering</a></h1>
+            <p>You love coding? We too. But here is a twist, it is a unconventional coding test which will test your problem solving as well as cryptographic skills too.</p>
+            <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo quisquam unde quam perferendis fugiat consequuntur tempore facere aliquam suscipit dignissimos?</p> -->
         </div>
-        <div class="profile">
-            <!-- <img src="logo.png" class="eventpic" alt=""> -->
-            <div class="content">
-                <div class="header">
-                    <img src="logo.png" alt="Jeams Middlman">
-                    <div class="infos">
-                        <h3 class="name">Event Name</h3>
-                        <!-- <p class="title">Web Developer / We Desinger</p> -->
-                    </div>
-                </div>
-                <div class="body">
-                    <h3 style="color: black;">Rules:</h3>
-                    <p>1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et accusamus odio itaque, qui explicabo laboriosam mi.</p>
-                    <p>2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et accusamus odio itaque, qui explicabo laboriosam mi.</p>
-                    <p>3. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et accusamus odio itaque, qui explicabo laboriosam mi.</p>
-                    <p>4. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et accusamus odio itaque, qui explicabo laboriosam mi.</p>
-                </div>
-            </div>
-        </div>
+            <img src="events/logos/reverse.jpeg" class="oeventpic" alt="">
+           
     </div>
-    <div class="eitems" style="margin-bottom: 60px;">
-        <div class="profile-e">
-            <!-- <img src="logo.png" class="eventpic" alt=""> -->
-            <div class="content">
-                <div class="header">
-                    <img src="logo.png" alt="Jeams Middlman">
-                    <div class="infos">
-                        <h3 class="name">Event Name</h3>
-                        <!-- <p class="title">Web Developer / We Desinger</p> -->
-                    </div>
-                </div>
-                <div class="body">
-                    <h3 style="color: black;">Rules:</h3>
-                    <p>1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et accusamus odio itaque, qui explicabo laboriosam mi.</p>
-                    <p>2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et accusamus odio itaque, qui explicabo laboriosam mi.</p>
-                    <p>3. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et accusamus odio itaque, qui explicabo laboriosam mi.</p>
-                    <p>4. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et accusamus odio itaque, qui explicabo laboriosam mi.</p>
-                </div>
-            </div>
-        </div>
+    <div class="eitems" style="margin-bottom: 60px;" data-aos="fade-up-right">
+            <img src="events/logos/nerdiness.png" class="eventpic" alt="">
         <div class="descrip">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur tempora consequatur similique
-                corrupti adipisci, iure accusantium sunt deleniti cupiditate quidem totam, incidunt iusto esse veniam
-                dignissimos. Quasi aut asperiores sapiente.Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quasi inventore ab reiciendis velit consequuntur, odit aliquid unde ea veniam, at voluptates modi
-                adipisci distinctio porro commodi praesentium dolore voluptatem? Sapiente.</p>
+            <h1><a href="events/dicey.html" style="text-decoration: none;">Nerdiness</a></h1>
+            <p>Enough of coding competitions, Nerdiness is a quiz competition which will test your subject knowledge. Participate and win in this short 20 minute contest.</p>
+            <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo quisquam unde quam perferendis fugiat consequuntur tempore facere aliquam suscipit dignissimos?</p> -->
         </div>
     </div>
     </div>

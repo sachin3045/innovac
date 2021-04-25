@@ -5,6 +5,7 @@ body {
     margin: 0;
     padding: 0;
     color: white;
+    background: black;
   }
   header{
       display: flex;
@@ -85,15 +86,18 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 60%;
     text-align: center;
     color:  #EFEEF5;
   }
   .header-content h1{
     text-transform: uppercase;
-    font-size: 3.4em;
-    letter-spacing: 1px;
+    font-size: 3.7em;
+    letter-spacing: 2px;
     font-weight: bolder;
+    margin: 40px 0;
+    transform: scale(1.1);
+    filter: brightness(130%);
   }
   .header-content p {
     font-size: 20px;
@@ -161,67 +165,83 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -2;
+  z-index: -5;
+  opacity: 0.7;
   }
   @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
 
 
 .year {
+  position: relative;
   font-size: 2rem;
   z-index: 10;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 50%;
-  margin-top: 20px;
-  margin-left: 160px;
-  padding: 0%;
-  /* border: 25px solid black;  */
-  text-shadow: 2px 1px;
-  box-shadow: black;
-  height: fit-content;
-  width: fit-content;
-  padding: -25px;
+  width: 60%;
+  margin-top: -30px;
 }
 .year h1 {
   font-size: 2rem;
-  /* text-decoration: dotted !important; */
   /* margin: -100px 0 30px; */
 }
 .countdown{
   display: flex;
 }
 .time {
-  z-index: -2;
   display: flex;
+  position: relative;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* color: black; */
+  height: 50px;
+  width: 50px;
   margin: 0.25rem;
-  /* border: 2px solid;
-  border-radius: 20%;
-  background: white; */
+  border: 1px solid white;
+  padding: 25px;
+  border-radius: 50%;
+  z-index: 5;
 }
-
+.time:nth-child(1)
+{
+  border: 2px solid rgb(240, 240, 128);
+  /* color: rgb(238, 238, 181); */
+}
+.time:nth-child(2)
+{
+  border: 2px solid rgb(122, 203, 230);
+  /* color: rgb(195, 229, 240); */
+}
+.time:nth-child(3)
+{
+  border: 2px solid rgb(97, 221, 97);
+  /* color: rgb(182, 238, 182); */
+}
+.time:nth-child(4)
+{
+  border: 2px solid pink;
+  /* color: pink; */
+}
+.time::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -3;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background: black;
+  opacity: 0.5;
+}
 .time h2 {
-  height: 35px;
-  width: 45px;
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  align-items: center;
-  /* border: 3px solid black; */
-  color: white;
-  border-radius: 100%;
-  background: none;
   font-size: 1.5rem;
   margin: 0;
 }
 
 .time p {
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin: 0;
   padding: 0;
 }
@@ -238,6 +258,6 @@ body {
     margin: 0 0 5px;
   }
   .time p {
-    font-size: 1.6rem;
+    font-size: 1rem;
   }
 }  
