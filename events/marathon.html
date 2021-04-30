@@ -12,181 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Corben&display=swap" rel="stylesheet">
-
-    <style>
-      body{
-        font-family: 'Josefin Sans', sans-serif;
-        background: #19193f !important;
-      }
-        @media (min-width: 576px) {
-    .rounded-nav {
-        border-radius: 50rem !important;
-    }
-    }
-
-    @media (min-width: 576px) {
-    .rounded-nav .nav-link {
-        border-radius: 50rem !important;
-    }
-    }
-
-    .with-arrow .nav-link.active {
-    position: relative;
-    }
-
-    .with-arrow .nav-link.active::after {
-    content: '';
-    border-left: 6px solid transparent;
-    border-right: 6px solid transparent;
-    border-top: 6px solid #2b90d9;
-    position: absolute;
-    bottom: -6px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: block;
-    }
-
-    .lined .nav-link {
-    border: none;
-    border-bottom: 3px solid transparent;
-    }
-
-    .lined .nav-link:hover {
-    border: none;
-    border-bottom: 3px solid transparent;
-    }
-
-    .lined .nav-link.active {
-    background: none;
-    color: #555;
-    border-color: #2b90d9;
-    }
-
-    .nav-pills .nav-link {
-    color: #555;
-    }
-
-    .text-uppercase {
-    letter-spacing: 0.1em;
-    }
-    .cont{
-      margin-top: -30px !important;
-    }
-    header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  /* position: absolute;
-  top:0%;
-  left: 0%; */
-  width:100%;
-  margin: 0;
-  margin-top: 5px;
-  padding: 0;
-  height:100px;
-  font-size: 15px;
-}
-/* navbar */
-nav{
-  color: #FFF;
-  margin:30px 90px;
-}
-nav ul{
-  list-style: none;
-}
-nav ul li {
-  /* float: left; */
-  display: inline-block;
-  transition: .3s;
-}
-nav ul li a{
-  padding: 10px 15px;
-  text-decoration: none;
-  color: #EFEEF5;
-  transition: .5;
-  font-size: 17px;
-  margin-left:16px;
-}
-nav ul:hover li a{
-  opacity: .3;
-  filter: blur(1px);
-  color: #EFEEF5;
-}
-nav ul li:hover a{
-  text-decoration: none;
-  opacity: 1;
-  filter: blur(0);
-  /* color: #591BC5;; */
-}
-nav ul li:hover{
-  /* height: 45px; */
-  transform: scale(1.4,1.4);
-  /* padding-top: 30px;
-  margin-top: -10px; */
- /* background: #EFEEF5; */
-  text-decoration: none;
-  transition: 0.3s;
-  /* transform: skew(15deg); */
-}
-/* Logo */
-.logo{
-  width: 35px;
-  height: 35px;
-  background: #EFEEF5;
-  margin: 40px 63px;
-  float: left;
-  transform: rotate(-30deg);
-}
-.logo span{
-  color: #591BC5;
-  font-size: 2em;
-  line-height: 1.4;
-  padding-left: 5px;
-  font-weight: bold;
-}
-.nlogo{
-    width: 50px;
-    height: 50px;
-  }
-  .lft{
-    margin-left: 30px;
-    margin-right: 80px;
-  }
-  .lft p{
-    margin-left: 10px;
-	margin-top: 13px;
-    float: right;
-	line-height: 1;
-	font-family: 'Josefin Sans', sans-serif !important;
-	color: white !important;
-	font-size: 15px;
-  }
-  #bck{
-    object-fit: cover;
-    position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  opacity: 0.4;
-  }
-  #btn1{
-    position: absolute;
-    left: 30px;
-    top: 50%;
-    border-radius: 100px;
-  }
-  #btn2{
-    position: absolute;
-    right: 30px;
-    top: 50%;
-    border-radius: 100px;
-  }
-  .cw{
-    width: 90% !important;
-  }
-    </style>
+    <link rel="stylesheet" href="../css/allevents.css">
 
 </head>
 
@@ -213,7 +39,7 @@ nav ul li:hover{
     <!-- logo -->
     <!-- <div class="logo"><span>N</span></div> -->
 </header>
-  <div class="cont container py-5 animated fadeIn">
+  <div class="cont container py-5 animated fadeIn"scr >
   <!-- For demo purpose -->
   <div class="row mb-5">
     <div class="col-lg-8 py-4 text-white text-center mx-auto">
@@ -233,9 +59,9 @@ nav ul li:hover{
   <!-- End -->
 
 
-  <div class="cw p-5 bg-white container rounded shadow mb-5" style="border-radius: 20px !important;">
+  <div class="cw p-5 bg-white container rounded shadow mb-5" style="border-radius: 20px !important; background-color:#efe4f1 !important ;">
     <!-- Rounded tabs -->
-    <ul id="myTab" role="tablist" class="nav nav-tabs nav-pills flex-column flex-sm-row text-center bg-light border-0 rounded-nav">
+    <ul id="myTab" role="tablist" class="nav nav-tabs nav-pills flex-column flex-sm-row text-center bg-light border-0 rounded-nav" style="background-color:#f0e9f1 !important  ;">
       <li class="nav-item flex-sm-fill">
         <a id="description-tab" data-toggle="tab" href="#description" role="tab" aria-controls="description" aria-selected="true" class="nav-link border-0 text-uppercase font-weight-bold active">Description</a>
       </li>
@@ -253,11 +79,11 @@ nav ul li:hover{
       </li>
     </ul>
     <div id="myTabContent" class="tab-content">
-      <div id="description" role="tabpanel" aria-labelledby="description-tab" class="tab-pane fade px-4 py-5 show active">
+      <div id="description" role="tabpanel" aria-labelledby="description-tab" class="scr tab-pane fade px-4 py-5 show active">
         <p>Marathon Coding Competition is being conducted by PCC club, under <b>Innovac 21</b>. This contest will check your problem solving skill as well as evaluate how fast can you solve all the problems.</p>
         <p> Participate and outsmart the other participants to reach at the peak of the Leaderboard. May the best coder win!</p>
       </div>
-      <div id="format" role="tabpanel" aria-labelledby="format-tab" class="tab-pane fade px-4 py-5 ">
+      <div id="format" role="tabpanel" aria-labelledby="format-tab" class="scr tab-pane fade px-4 py-5 ">
         <ul> This will be a 4 hour Coding contest, hosted at Hackerearth <br> 
             <li> This is an eliminative coding competition. Every 10 minutes or so, participant at the bottom of the leaderboard will be eliminated. (He/She can not make any more submissions).  </li><br>
             <li> The contest will have a winner when either only one participant remains, or participant at the top of the leaderboard at the end of the contest.</li><br>
@@ -266,7 +92,7 @@ nav ul li:hover{
             <li>After that, There will be an eliminative wave every 10 minutes, eliminating the last participant in the leaderboard.</li>
         </ul>
       </div>
-      <div id="rules" role="tabpanel" aria-labelledby="rules-tab" class="tab-pane fade px-4 py-5">
+      <div id="rules" role="tabpanel" aria-labelledby="rules-tab" class="scr tab-pane fade px-4 py-5">
         <p>
           <ul>
             <li>It is an individual event.</li>
@@ -282,10 +108,10 @@ nav ul li:hover{
         </p>
       </div>
       
-      <div id="contest" role="tabpanel" aria-labelledby="contest-tab" class="tab-pane text-center fade px-4 py-5">
+      <div id="contest" role="tabpanel" aria-labelledby="contest-tab" class="scr tab-pane text-center fade px-4 py-5">
         <a href="#"><button class="btn btn-outline-info">Contest Link</button></a>
       </div>
-      <div id="contact" role="tabpanel" aria-labelledby="contact-tab" class="tab-pane text-center fade px-4 py-5">
+      <div id="contact" role="tabpanel" aria-labelledby="contact-tab" class="scr tab-pane text-center fade px-4 py-5">
         <h4>Manish - 8127920118</h4>
       </div>
 
